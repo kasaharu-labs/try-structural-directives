@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ng-basis';
   condition = false;
+
+  toggleVisibilityMessage(): void {
+    this.condition = !this.condition;
+  }
 }
