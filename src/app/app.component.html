@@ -2,4 +2,8 @@
 <button (click)="toggleVisibilityMessage()">表示/非表示切り替え</button>
 
 <p *appUnless="condition">この文章は condition が true のとき見えない</p>
+
+<ng-template [appUnless]="condition">
+  <p>この文章は condition が true のとき見えない</p>
+</ng-template>
 <router-outlet></router-outlet>
